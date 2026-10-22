@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>єХНТУ</title>
+  <link rel="stylesheet" type="text/css" href="css/popup.css">
+</head>
+<body>
+<div id="main"> 
+  <div id="name">
+	<div id="university-header" class="university-header">
+		<img id="university-icon" class="university-icon" src="" alt="University Icon">
+		<span id="university-name" class="university-name"></span>
+	</div>
+  </div>
+  <div id="left-block">
+	<div id="image">
+		<img src="img/raccoon1.jpg" height="100" />
+		</div>
+<!--<button id="playRandomSound" style="display:flex; align-items:center; justify-content:flex-start; margin-top: 5px; border-radius: 3px; border: 1px solid #b5b4b4; padding: 5px;cursor: pointer;">
+  <img src="img/raccoon_2281230.png" style="height: 20px; width: 20px; margin-right: 8px;" alt="Raccoon Icon">
+  AI-assistant
+</button>-->
+</div>
+  <div id="info-block">
+  <div class="white-block">
+    <div id="weekNumber"></div>
+    <div id="currentDate"></div>
+	</div>
+
+   <div class="blue-block">
+    <div id="schedule">
+      <div style="font-size: 16px;font-weight: bold;margin-bottom: 0px;margin-top: 5px;">Розклад дзвінків:</div>
+      <ul id="timetable">
+        <!-- Розклад буде згенеровано динамічно через JavaScript -->
+      </ul>
+    </div>
+</div>
+	
+
+  </div>
+	    <div>      
+      <button class="regularButton" id="calendarButton" style="display:inline-block; min-width:170px; margin-top: 5px; border-radius: 3px; border: 1px solid #b5b4b4;">Календар</button>
+	  <button class="scheduleButton" id="scheduleButton" style="display:inline-block; min-width:170px; margin-top: 5px; border-radius: 3px; border: 1px solid #b5b4b4;">Розклад занять</button>
+	  </div>
+    
+	
+	<div style="margin: 5px 0;">
+		<div class="links soc-icon"><a href="https://kntu.net.ua/ukr" target="_blank"><img src="icons/web.svg" title="Сайт" width="24" height="24"></a></div>  
+		<div class="links soc-icon"><a href="https://mdl.kntu.net.ua/" target="_blank"><img src="icons/moodle.svg" title="Moodle" width="24" height="24"></a></div>
+		<div class="links soc-icon"><a href="https://mail.kntu.edu.ua/" target="_blank"><img src="icons/email.svg" title="Carbonio" width="24" height="24"></a></div>
+		<div class="links soc-icon"><a href="https://instagram.com/kntu_official" target="_blank"><img src="icons/instagram.svg" title="Instagram" width="24" height="24"></a></div>  
+		<div class="links soc-icon"><a href="https://www.facebook.com/kntu.net.ua/" target="_blank"><img src="icons/fb.svg" title="Facebook" width="24" height="24"></a></div>  
+		<div class="links soc-icon"><a href="https://www.youtube.com/channel/UC7oozvQhiNTmgrPv5lX63Tg" target="_blank"><img src="icons/youtube.svg" title="Youtube" width="24" height="24"></a></div>
+		<div class="links soc-icon"><a href="https://t.me/khntu_news" target="_blank"><img src="icons/telegram.svg" title="Telegram" width="24" height="24"></a></div>
+		<div class="links soc-icon" id="open-settings"><img src="icons/settings.svg" title="Settings" width="24" height="24"></div>
+	</div> 
+	
+    
+
+
+
+
+  <!-- Блок підтримки (буде показаний/прихований залежно від налаштувань) -->
+  <div class="white-block" id="supportBlock">
+    <div class="grey-block">
+      <div style="font-size: 0.8em;">
+        Підтримайте наш чудовий додаток. Перейдіть за посиланням і поставте, будь ласка, <b><a href="https://chromewebstore.google.com/detail/помічник-хнту/kfhobnegcnngjhbgkbfchopkcomdpfap/reviews" target="_blank">5 зірок</a></b>. А ще розкажіть всім студентам та співробітникам що в них тепер є такий корисний помічник.
+      </div>
+    </div>
+  </div>
+
+  <div style="font-size: 0.7em; margin-top: 10px; text-align: right;">
+    <span id="version"></span><span style="margin-left: 5px;">Developed by Kalinsky Eugen</span> 
+
+  </div>
+ 
+</div>
+<script src="scripts/popup.js" type="module"></script>
+</body>
+</html>

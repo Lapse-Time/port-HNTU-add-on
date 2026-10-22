@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "icons/icon128.png",
+         "16": "icons/icon16.png",
+         "32": "icons/icon32.png",
+         "48": "icons/icon48.png"
+      },
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "scripts/background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "js": [ "scripts/content.js" ],
+      "matches": [ "https://mdl.kntu.net.ua/*" ]
+   } ],
+   "description": "єХНТУ — корисний інструмент для студентів та співробітників Херсонського національного технічного університету (ХНТУ)",
+   "host_permissions": [ "https://mdl.kntu.net.ua/*", "https://sheduleapi.kntu.pp.ua/*", "http://91.199.45.91:8080/*" ],
+   "icons": {
+      "128": "icons/icon128.png",
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlasrD0/O0xuCemfmiLsN7nruBQbad3xJOWFrdeQ/qtBNXyastuMxPChNf84hqrs9e4I0FiftQtDGXAdpUG/txrNte2lnFtTIKgksmXlAH9bwN9z/VOucbcIV0YvMP67bPqi7lre44VXLXMQ2GzPfo702nfw64w+5YOblJCbMHvNHPc2DZuA8g06WseXGuaEFYBEw2z3G79scm5/hfJJhoAnjfwoQDztr9EFXSnJQ9pyHNeWXHbdG8NrRJezDrnPrhy91w0AdFuKu4ruqdzkcy3XROa3mSJYo/Bbynf5nXl2Mcg83RZNFQr0UzFEc+5oyO4D38CdU8qTvXKCyMuMFPQIDAQAB",
+   "manifest_version": 3,
+   "name": "єХНТУ",
+   "options_page": "options.html",
+   "permissions": [ "offscreen", "alarms", "storage", "cookies" ],
+   "short_name": "єХНТУ",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.5.18",
+   "web_accessible_resources": [ {
+      "matches": [ "https://mdl.kntu.net.ua/*" ],
+      "resources": [ "sounds/**", "settings/**" ]
+   } ]
+}
